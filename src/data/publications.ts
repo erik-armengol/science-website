@@ -1,21 +1,5 @@
 export const publications = [
   {
-    title: 'IQP Born Machines under Data-dependent and Agnostic Initialization Strategies',
-    authors: 'Sacha Lerch, Joseph Bowles, Ricard Puig, Erik Armengol, Zoë Holmes, and Supanut Thanasilp',
-    year: 2026, type: 'Preprint', venue: 'arXiv:2603.14576',
-    url: 'https://arxiv.org/abs/2603.14576', pdf: 'https://arxiv.org/pdf/2603.14576',
-    summary: 'Understanding how initialization shapes the trainability of quantum generative models.',
-    topic: 'Generative models',
-  },
-  {
-    title: 'Learning complexity gradually in quantum machine learning models',
-    authors: 'Erik Recio-Armengol, Franz J. Schreiber, Jens Eisert, and Carlos Bravo-Prieto',
-    year: 2026, type: 'Journal', venue: 'Physical Review Research 8, 033006',
-    url: 'https://journals.aps.org/prresearch/abstract/10.1103/wnlr-q9xd', pdf: 'https://journals.aps.org/prresearch/pdf/10.1103/wnlr-q9xd',
-    summary: 'A curriculum-inspired approach to training quantum models by prioritizing informative data.',
-    topic: 'Learning theory',
-  },
-  {
     title: 'Train on classical, deploy on quantum: scaling generative quantum machine learning to a thousand qubits',
     authors: 'Erik Recio-Armengol, Shahnawaz Ahmed, and Joseph Bowles',
     year: 2025, type: 'Preprint', venue: 'arXiv:2503.02934',
@@ -28,7 +12,7 @@ export const publications = [
     authors: 'Erik Armengol and Joseph Bowles',
     year: 2025, type: 'Preprint', venue: 'arXiv:2501.04776',
     url: 'https://arxiv.org/abs/2501.04776', pdf: 'https://arxiv.org/pdf/2501.04776',
-    summary: 'Research software for optimizing large-scale quantum circuits with automatic differentiation in JAX.',
+    summary: 'Software for optimizing large-scale quantum circuits with automatic differentiation in JAX.',
     topic: 'Research software',
   },
   {
@@ -40,11 +24,27 @@ export const publications = [
     topic: 'Efficient inference',
   },
   {
+    title: 'IQP Born Machines under Data-dependent and Agnostic Initialization Strategies',
+    authors: 'Sacha Lerch, Joseph Bowles, Ricard Puig, Erik Armengol, Zoë Holmes, and Supanut Thanasilp',
+    year: 2026, type: 'Preprint', venue: 'arXiv:2603.14576',
+    url: 'https://arxiv.org/abs/2603.14576', pdf: 'https://arxiv.org/pdf/2603.14576',
+    summary: 'Understanding how initialization impacts the trainability of quantum generative models and the mitigation of barren plateaus.',
+    topic: 'Generative models',
+  },
+  {
     title: 'Potential and limitations of random Fourier features for dequantizing quantum machine learning',
     authors: 'Ryan Sweke, Erik Recio-Armengol, Sofiene Jerbi, Elies Gil-Fuster, Bryce Fuller, Jens Eisert, and Johannes Jakob Meyer',
     year: 2025, type: 'Journal', venue: 'Quantum 9, 1640',
     url: 'https://quantum-journal.org/papers/q-2025-02-20-1640/', pdf: 'https://quantum-journal.org/papers/q-2025-02-20-1640/pdf/',
     summary: 'Characterizing when classical random Fourier features can efficiently reproduce quantum learning models.',
+    topic: 'Learning theory',
+  },
+  {
+    title: 'Learning complexity gradually in quantum machine learning models',
+    authors: 'Erik Recio-Armengol, Franz J. Schreiber, Jens Eisert, and Carlos Bravo-Prieto',
+    year: 2026, type: 'Journal', venue: 'Physical Review Research 8, 033006',
+    url: 'https://journals.aps.org/prresearch/abstract/10.1103/wnlr-q9xd', pdf: 'https://journals.aps.org/prresearch/pdf/10.1103/wnlr-q9xd',
+    summary: 'A curriculum-inspired approach to training quantum models by prioritizing informative data.',
     topic: 'Learning theory',
   },
 ];
