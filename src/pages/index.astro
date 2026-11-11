@@ -31,9 +31,9 @@ const description = 'Erik Armengol — researcher in quantum machine learning, e
           
           <!-- <h1 id="intro-title">Understanding deeply.<br /><em>Building from first principles.</em></h1> -->
           <!-- <h1 id="intro-title">Building from first principles.<br /></h1> -->
-          <h1 id="intro-title">Building from first principles.<br /><em>One atom at a time.</em></h1>
+          <h1 id="intro-title">Thinking from first principles.<br /><em>Learning from experiments.</em></h1>
           
-          <p class="intro">I’m Erik, a researcher working at the intersection of machine learning and quantum computing. I study how learning models work, where their limits lie, and how quantum computers could surpass the AI models we currently have. My true passion is understanding from the ground up, so acting from first principles is in my DNA.</p>
+          <p class="intro">I’m Erik, a researcher working at the intersection of machine learning and quantum computing. I study how learning models work, where their limits lie, and how quantum computers could surpass the capabilities of the AI models we currently have. My true passion is understanding from the ground up, so acting from first principles is in my DNA.</p>
           <p class="status"><span aria-hidden="true"></span> Writing my PhD thesis at ICFO · Expected completion before summer 2027</p>
           <div class="hero-links"><a class="primary-link" href="#research">Explore my research <span aria-hidden="true">↓</span></a><a href="https://scholar.google.com/citations?user=Anmn1JoAAAAJ">Google Scholar <span aria-hidden="true">↗</span></a></div>
         </div>
@@ -48,12 +48,13 @@ const description = 'Erik Armengol — researcher in quantum machine learning, e
         <div class="papers">{publications.map((paper, i) => <article class="paper" data-type={paper.type}>
           <div class="paper-index">{String(i + 1).padStart(2, '0')}<span>{paper.year}</span></div>
           <div class="paper-content"><div class="paper-meta"><span class:list={['badge', { preprint: paper.type === 'Preprint' }]}>{paper.type === 'Journal' ? 'Journal article' : 'Preprint'}</span><span>{paper.topic}</span></div><h3><a href={paper.url}>{paper.title}</a></h3><p class="authors">{paper.authors}</p><p class="paper-summary">{paper.summary}</p><p class="venue">{paper.venue} · {paper.year}</p></div>
-          <div class="paper-links"><a href={paper.url} aria-label={`Read ${paper.title}`}>Paper <span aria-hidden="true">↗</span></a><a href={paper.pdf} aria-label={`PDF of ${paper.title}`}>PDF <span aria-hidden="true">↗</span></a></div>
+          <!-- <div class="paper-links"><a href={paper.url} aria-label={`Read ${paper.title}`}>Paper <span aria-hidden="true">↗</span></a><a href={paper.pdf} aria-label={`PDF of ${paper.title}`}>PDF <span aria-hidden="true">↗</span></a></div> -->
+          <div class="paper-links"><a href={paper.pdf} aria-label={`PDF of ${paper.title}`}>PDF <span aria-hidden="true">↗</span></a></div>
         </article>)}</div>
         <p class="research-note">You may also find my work published under Erik Recio-Armengol.</p>
       </section>
       <section id="about" class="about section" aria-labelledby="about-title">
-        <div><p class="eyebrow">02 / Background</p><h2 id="about-title">Curiosity first.<br /><em>Rigor throughout.</em></h2><a class="text-link" href="https://www.linkedin.com/in/erik-armengol">More on LinkedIn <span aria-hidden="true">↗</span></a></div>
+        <div><p class="eyebrow">02 / Background</p><h2 id="about-title">Driven by curiosity.<br /><em>Grounded by rigor.</em></h2><a class="text-link" href="https://www.linkedin.com/in/erik-armengol">More on LinkedIn <span aria-hidden="true">↗</span></a></div>
         <div class="about-copy"><p>I’m finishing my PhD in Quantum Machine Learning at ICFO. My work combines mathematical analysis and numerical experiments to understand learning in high-dimensional systems, with a focus on model design, efficient inference, and optimization.</p><p>I enjoy getting to the foundations of a problem: understanding why a method works, identifying its limits, and turning that understanding into useful software. Python, JAX, and PyTorch are central to my day-to-day work.</p><p>My experience spans academic research and industry, including research stays and internships at Freie Universität Berlin, Xanadu, Los Alamos National Laboratory, and Allos AI. Before research, I spent several years building software and data analysis tools.</p><p>I’m interested in Research Scientist roles where I can bring this mix of theory and implementation to fundamental questions in AI.</p><div class="skills" aria-label="Research tools and interests"><span>Python</span><span>JAX</span><span>PyTorch</span><span>Quantum ML</span><span>Generative models</span></div></div>
       </section>
       <section class="contact section" aria-labelledby="contact-title"><p class="eyebrow">03 / Say hello</p><h2 id="contact-title">Let’s work on interesting problems.</h2><p>Research collaborations, ideas, or opportunities in machine learning and quantum computing.</p><a class="contact-email" href="mailto:erik@armengol.me">erik@armengol.me <span aria-hidden="true">↗</span></a></section>
